@@ -2,6 +2,7 @@
 Unofficial python implementation of the video spread-spectrum watermarking method by [Cox et al., "Secure spread spectrum watermarking for multimedia"](https://doi.org/10.1109/83.650120).
 
 You can run the method by the following command:
+
     python embed_ss_watermark.py -i "${original_yuv}" -o "${watermarked_yuv}" -w $width -hh $height -f $amount_of_frames -ws $watermark_size -s $seed -a $alpha -sc $skip_coefficients -t $type
 
 The argument `type` can be set to `ss` or `ss2` for watermarking every frame separately (performing a 2D DCT transform), or to `ss3` for watermarking a full video sequence (performing a 3D DCT transform).
